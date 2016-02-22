@@ -1,0 +1,98 @@
+\documentclass[a4paper,landscape]{article}
+
+%   Pakete dazuladen
+\input{include/libs.tex}
+%   Farbdefinitionen laden
+\input{include/colors.tex}
+%   \card-Commands laden
+\input{include/tikzcards.tex}
+
+%   Dummy-Contents
+\newcommand{\contentA}{Neunmalkluges Zitat\\mit Bezug zur Karte von einer fiktiven Figur.}
+\newcommand{\contentB}{Fun: 80\\Holy: 100}
+\newcommand{\contentC}{Oh hi.}
+
+\begin{document}
+\begin{center}
+    \pagestyle{empty}
+
+%   V-Space-Korrektur bei langen Titeln
+%   \cardtitle{\vspace{-5mm}SEHR LANGER TITEL}
+
+    \begin{tikzpicture}
+        \cardbackground{img/olw.jpg}
+        \cardtypeNorfolk
+        \cardtitle{Walsingham}
+        \cardcontent{\contentC}{\contentB}
+        \cardprice{5}
+        \cardborder
+%       \carddebug
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/castle_acre_priory.jpg}
+%       \carddebug
+        \cardtypeNorfolk
+        \cardtitle{Castle Acre}
+        \cardcontent{\contentC}{\contentB}
+        \cardprice{35}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/hare_street.jpg}
+        \cardtypeHertfordshire
+        \cardtitle{Old Swan, Hare Street}
+        \cardcontent{\contentC}{\contentB}
+        \cardprice{435}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/epping.jpg}
+        \cardtypeEssex
+        \cardtitle{Epping}
+        \cardcontent{\contentC}{\contentB}
+        \cardprice{$\infty$}
+        \cardborder
+    \end{tikzpicture}
+
+    \vspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/cat.jpg}
+        \cardtypeCharacter
+        \cardtitle{Schmächtiger Wächter}
+        \cardcontent{Miau.}{\contentB}
+        \cardprice{5}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/swaffham.jpg}
+        \cardtypeNorfolk
+        \cardtitle{Swaffham}
+        \cardcontent{\contentA}{\contentB}
+        \cardprice{35}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/cambridge.jpg}
+        \cardtypeCambridgeshire
+        \cardtitle{Cambridge}
+        \cardcontent{\contentA}{\contentB}
+        \cardprice{435}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/isleham.jpg}
+        \cardtypeCambridgeshire
+        \cardtitle{Isleham}
+        \cardcontent{\contentA}{\contentB}
+        \cardprice{$\infty$}
+        \cardborder
+    \end{tikzpicture}
+
+\end{center}
+\end{document}
