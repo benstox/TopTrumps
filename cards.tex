@@ -11,6 +11,11 @@
 \newcommand{\contentA}{Neunmalkluges Zitat\\mit Bezug zur Karte von einer fiktiven Figur.}
 \newcommand{\contentB}{Fun: 80\\Holy: 100}
 \newcommand{\contentC}{Oh hi.}
+\newcommand{\scores}[8]{
+\begin{tabular}{l r}
+Cake (volume):&#1\\Cake (taste):&#2\\Rest time:&#3\\Originality:&#4\\Hospitality:&#5\\Timeliness:&#6\\Luxury:&#7\\Prayerfulness:&#8\\
+\end{tabular}
+}
 
 \begin{document}
 \begin{center}
@@ -20,18 +25,91 @@
 %   \cardtitle{\vspace{-5mm}SEHR LANGER TITEL}
 
     \begin{tikzpicture}
-        \cardbackground{img/olw.jpg}
-        \cardtypeNorfolk
-        \cardtitle{Walsingham}
-        \cardcontent{\contentC}{\contentB}
-        \cardprice{5}
+        \cardbackground{img/Epping1.jpg}
+        \cardtypeEssex
+        \cardtitle{Epping}
+        \cardcontent{\contentC}{\scores{0}{0}{12h}{7}{83}{10}{2}{7}}
+        \cardprice{2}
         \cardborder
-%       \carddebug
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/Nazing1.jpg}
+        \cardtypeEssex
+        \cardtitle{Nazeing}
+        \cardcontent{\contentC}{\scores{2}{4}{40m}{7}{75}{7}{3}{1}}
+        \cardprice{-1}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/Roydon.jpg}
+        \cardtypeEssex
+        \cardtitle{Roydon}
+        \cardcontent{\contentC}{\scores{0}{0}{1h}{6}{80}{5}{4}{1}}
+        \cardprice{}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/LeaValley.jpg}
+        \cardtypeHertfordshire
+        \cardtitle{Lea Valley}
+        \cardcontent{\contentC}{\scores{0}{0}{15m}{0}{0}{6}{0}{8}}
+        \cardprice{}
+        \cardborder
+    \end{tikzpicture}
+
+    \vspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/HighCross2.jpg}
+        \cardtypeHertfordshire
+        \cardtitle{High Cross}
+        \cardcontent{Miau.}{\scores{3}{3}{12h}{8}{85}{7}{1}{9}}
+        \cardprice{1}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/cat.jpg}
+        \cardtypeHertfordshire
+        \cardtitle{Old Hall Green}
+        \cardcontent{\contentA}{\scores{0}{0}{20m}{8}{86}{6}{coin flip}{coin flip}}
+        \cardprice{}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/HareStreet.jpg}
+        \cardtypeHertfordshire
+        \cardtitle{Hare Street}
+        \cardcontent{\contentC}{\scores{1}{5}{40m}{7}{50}{7}{3}{1}}
+        \cardprice{}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/Barkway.jpg}
+        \cardtypeHertfordshire
+        \cardtitle{Barkway}
+        \cardcontent{\contentA}{\scores{0}{0}{1h}{6}{0}{5}{2}{0}}
+        \cardprice{}
+        \cardborder
+    \end{tikzpicture}
+    
+\newpage % PAGE 2
+
+    \begin{tikzpicture}
+        \cardbackground{img/Epping1.jpg}
+        \cardtypeEssex
+        \cardtitle{Epping}
+        \cardcontent{\contentC}{\contentB}
+        \cardprice{$\infty$}
+        \cardborder
     \end{tikzpicture}
     \hspace{5mm}
     \begin{tikzpicture}
         \cardbackground{img/castle_acre_priory.jpg}
-%       \carddebug
         \cardtypeNorfolk
         \cardtitle{Castle Acre}
         \cardcontent{\contentC}{\contentB}
@@ -49,11 +127,11 @@
     \end{tikzpicture}
     \hspace{5mm}
     \begin{tikzpicture}
-        \cardbackground{img/epping.jpg}
-        \cardtypeEssex
-        \cardtitle{Epping}
+        \cardbackground{img/olw.jpg}
+        \cardtypeNorfolk
+        \cardtitle{Walsingham}
         \cardcontent{\contentC}{\contentB}
-        \cardprice{$\infty$}
+        \cardprice{5}
         \cardborder
     \end{tikzpicture}
 

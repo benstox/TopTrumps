@@ -116,7 +116,7 @@
         \fill[elementcorners,contentbg] \shapeContentArea;
     \end{scope}
     \node[below right, text width=(\cardwidth-2*\strippadding-\stripwidth-2*\textpadding-0.3)*1cm] at (2*\strippadding+\stripwidth+\textpadding,0.5*\cardheight-\textpadding) {
-        \textit{\glqq\normalsize #1\grqq}
+        \textit{``\normalsize #1''}
     };
     \node[below right, text width=(\cardwidth-2*\strippadding-\stripwidth-2*\textpadding-0.3)*1cm] at (2*\strippadding+\stripwidth+\textpadding,3) {
         \vrule width \textwidth height 2pt \\[-2pt]
@@ -131,5 +131,5 @@
         \clip[cardcorners] \shapeCard;
         \fill[strip,pricebg] \shapeRightStripShort;
     \end{scope}
-    \node at (\cardwidth-0.5*\stripwidth-\strippadding,\titley-0.1) {\color{white}#1};
+    \node at (\cardwidth-0.5*\stripwidth-\strippadding,\titley-0.1) {\color{white}\textbf{#1}};
 }
