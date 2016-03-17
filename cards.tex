@@ -13,7 +13,7 @@
 \newcommand{\contentC}{Oh hi.}
 \newcommand{\scores}[8]{
 \begin{tabular}{l r}
-Cake (volume):&#1\\Cake (taste):&#2\\Rest time:&#3\\Originality:&#4\\Hospitality:&#5\\Timeliness:&#6\\Luxury:&#7\\Prayerfulness:&#8\\
+Cake (volume):&#1 table(s)\\Cake (taste):&#2\ding{72}\\Rest time:&#3\\Originality:&#4/10\\Hospitality:&#5\%\\Timeliness:&#6/10\\Luxury:&#7\ding{72}\\Prayerfulness:&#8/10\\
 \end{tabular}
 }
 
@@ -28,7 +28,7 @@ Cake (volume):&#1\\Cake (taste):&#2\\Rest time:&#3\\Originality:&#4\\Hospitality
         \cardbackground{img/Epping1.jpg}
         \cardtypeEssex
         \cardtitle{Epping}
-        \cardcontent{\contentC}{\scores{0}{0}{12h}{7}{83}{10}{2}{7}}
+        \cardcontent{Morning of Feast of St Joseph; we set off.}{\scores{0}{0}{12h}{7}{83}{10}{2}{7}}
         \cardprice{2}
         \cardborder
     \end{tikzpicture}
@@ -37,7 +37,7 @@ Cake (volume):&#1\\Cake (taste):&#2\\Rest time:&#3\\Originality:&#4\\Hospitality
         \cardbackground{img/Nazing1.jpg}
         \cardtypeEssex
         \cardtitle{Nazeing}
-        \cardcontent{\contentC}{\scores{2}{4}{40m}{7}{75}{7}{3}{1}}
+        \cardcontent{Morning of Feast of St Joseph; our first cake stop.}{\scores{2}{4}{40m}{7}{75}{7}{3}{1}}
         \cardprice{-1}
         \cardborder
     \end{tikzpicture}
@@ -46,7 +46,7 @@ Cake (volume):&#1\\Cake (taste):&#2\\Rest time:&#3\\Originality:&#4\\Hospitality
         \cardbackground{img/Roydon.jpg}
         \cardtypeEssex
         \cardtitle{Roydon}
-        \cardcontent{\contentC}{\scores{0}{0}{1h}{6}{80}{5}{4}{1}}
+        \cardcontent{Feast of St Joseph; lunch stop.}{\scores{0}{0}{1h}{6}{80}{5}{4}{1}}
         \cardprice{}
         \cardborder
     \end{tikzpicture}
@@ -55,7 +55,7 @@ Cake (volume):&#1\\Cake (taste):&#2\\Rest time:&#3\\Originality:&#4\\Hospitality
         \cardbackground{img/LeaValley.jpg}
         \cardtypeHertfordshire
         \cardtitle{Lea Valley}
-        \cardcontent{\contentC}{\scores{0}{0}{15m}{0}{0}{6}{0}{8}}
+        \cardcontent{Afternoon of Feast of St Joseph; our first station stop.}{\scores{0}{0}{15m}{0}{0}{6}{0}{8}}
         \cardprice{}
         \cardborder
     \end{tikzpicture}
@@ -65,16 +65,16 @@ Cake (volume):&#1\\Cake (taste):&#2\\Rest time:&#3\\Originality:&#4\\Hospitality
         \cardbackground{img/HighCross2.jpg}
         \cardtypeHertfordshire
         \cardtitle{High Cross}
-        \cardcontent{Miau.}{\scores{3}{3}{12h}{8}{85}{7}{1}{9}}
+        \cardcontent{Evening of Feast of St Joseph; end of our first day.}{\scores{3}{3}{12h}{8}{85}{7}{1}{9}}
         \cardprice{1}
         \cardborder
     \end{tikzpicture}
     \hspace{5mm}
     \begin{tikzpicture}
-        \cardbackground{img/cat.jpg}
+        \cardbackground{img/StEdmundsWare.jpg}
         \cardtypeHertfordshire
-        \cardtitle{Old Hall Green}
-        \cardcontent{\contentA}{\scores{0}{0}{20m}{8}{86}{6}{coin flip}{coin flip}}
+        \cardtitle{St Edmunds, Ware}
+        \cardcontent{Morning of Palm Sunday.}{\scores{0}{0}{20m}{8}{86}{6}{coin flip: 4 or 2}{coin flip: 7 or 0}}
         \cardprice{}
         \cardborder
     \end{tikzpicture}
@@ -83,7 +83,7 @@ Cake (volume):&#1\\Cake (taste):&#2\\Rest time:&#3\\Originality:&#4\\Hospitality
         \cardbackground{img/HareStreet.jpg}
         \cardtypeHertfordshire
         \cardtitle{Hare Street}
-        \cardcontent{\contentC}{\scores{1}{5}{40m}{7}{50}{7}{3}{1}}
+        \cardcontent{Morning of Palm Sunday; a stop for tea and hot cross buns.}{\scores{1}{5}{40m}{7}{50}{7}{3}{1}}
         \cardprice{}
         \cardborder
     \end{tikzpicture}
@@ -92,7 +92,7 @@ Cake (volume):&#1\\Cake (taste):&#2\\Rest time:&#3\\Originality:&#4\\Hospitality
         \cardbackground{img/Barkway.jpg}
         \cardtypeHertfordshire
         \cardtitle{Barkway}
-        \cardcontent{\contentA}{\scores{0}{0}{1h}{6}{0}{5}{2}{0}}
+        \cardcontent{Palm Sunday; lunch stop.}{\scores{0}{0}{1h}{6}{0}{5}{2}{0}}
         \cardprice{}
         \cardborder
     \end{tikzpicture}
@@ -100,57 +100,66 @@ Cake (volume):&#1\\Cake (taste):&#2\\Rest time:&#3\\Originality:&#4\\Hospitality
 \newpage % PAGE 2
 
     \begin{tikzpicture}
-        \cardbackground{img/Epping1.jpg}
-        \cardtypeEssex
-        \cardtitle{Epping}
-        \cardcontent{\contentC}{\contentB}
-        \cardprice{$\infty$}
-        \cardborder
-    \end{tikzpicture}
-    \hspace{5mm}
-    \begin{tikzpicture}
-        \cardbackground{img/castle_acre_priory.jpg}
-        \cardtypeNorfolk
-        \cardtitle{Castle Acre}
-        \cardcontent{\contentC}{\contentB}
-        \cardprice{35}
-        \cardborder
-    \end{tikzpicture}
-    \hspace{5mm}
-    \begin{tikzpicture}
-        \cardbackground{img/hare_street.jpg}
+        \cardbackground{img/hertfordshireway.jpg}
         \cardtypeHertfordshire
-        \cardtitle{Old Swan, Hare Street}
-        \cardcontent{\contentC}{\contentB}
-        \cardprice{435}
+        \cardtitle{Hertfordshire Way}
+        \cardcontent{Afternoon of Palm Sunday; a station stop.}{\scores{0}{0}{15m}{0}{0}{8}{0}{5}}
+        \cardprice{1}
         \cardborder
     \end{tikzpicture}
     \hspace{5mm}
     \begin{tikzpicture}
-        \cardbackground{img/olw.jpg}
-        \cardtypeNorfolk
-        \cardtitle{Walsingham}
-        \cardcontent{\contentC}{\contentB}
-        \cardprice{5}
+        \cardbackground{img/Royston2.jpg}
+        \cardtypeHertfordshire
+        \cardtitle{Royston}
+        \cardcontent{Evening of Palm Sunday; we stay the night with parishioners.}{\scores{1}{1}{12h}{9}{100}{9}{5}{8}}
+        \cardprice{3}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/GolfCourse2.jpg}
+        \cardtypeHertfordshire
+        \cardtitle{Golf Course}
+        \cardcontent{Morning of Holy Monday; a station stop.}{\scores{0}{0}{15m}{0}{0}{4}{0}{8}}
+        \cardprice{}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/Fowlmere1.jpg}
+        \cardtypeCambridgeshire
+        \cardtitle{Fowlmere}
+        \cardcontent{Morning of Holy Monday; a cake stop.}{\scores{5}{5}{40m}{8}{89}{3}{3}{3}}
+        \cardprice{-1}
         \cardborder
     \end{tikzpicture}
 
     \vspace{5mm}
     \begin{tikzpicture}
-        \cardbackground{img/cat.jpg}
-        \cardtypeCharacter
-        \cardtitle{Schmächtiger Wächter}
-        \cardcontent{Miau.}{\contentB}
-        \cardprice{5}
+        \cardbackground{img/Newton1.jpg}
+        \cardtypeCambridgeshire
+        \cardtitle{Newton}
+        \cardcontent{Holy Monday; lunch stop.}{\scores{0}{0}{1h15m}{2}{31}{5}{2}{4}}
+        \cardprice{2}
         \cardborder
     \end{tikzpicture}
     \hspace{5mm}
     \begin{tikzpicture}
-        \cardbackground{img/swaffham.jpg}
-        \cardtypeNorfolk
-        \cardtitle{Swaffham}
-        \cardcontent{\contentA}{\contentB}
-        \cardprice{35}
+        \cardbackground{img/Telescopes1.jpg}
+        \cardtypeCambridgeshire
+        \cardtitle{Telescopes}
+        \cardcontent{Afternoon of Holy Monday; a station stop.}{\scores{0}{0}{15m}{4}{0}{3}{0}{5}}
+        \cardprice{}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/Grantchester3.jpg}
+        \cardtypeCambridgeshire
+        \cardtitle{Grantchester}
+        \cardcontent{Afternoon of Holy Monday; a cake stop.}{\scores{2}{5}{45m}{9}{88}{5}{3}{2}}
+        \cardprice{2}
         \cardborder
     \end{tikzpicture}
     \hspace{5mm}
@@ -158,8 +167,65 @@ Cake (volume):&#1\\Cake (taste):&#2\\Rest time:&#3\\Originality:&#4\\Hospitality
         \cardbackground{img/cambridge.jpg}
         \cardtypeCambridgeshire
         \cardtitle{Cambridge}
-        \cardcontent{\contentA}{\contentB}
-        \cardprice{435}
+        \cardcontent{Evening of Holy Monday; we stay at the Margaret Beaufort Institute.}{\scores{0}{0}{12h}{7}{65}{6}{4}{10}}
+        \cardprice{1}
+        \cardborder
+    \end{tikzpicture}
+
+\newpage % PAGE 3
+
+    \begin{tikzpicture}
+        \cardbackground{img/BaitsBiteLock.jpg}
+        \cardtypeCambridgeshire
+        \cardtitle{Baits Bite Lock}
+        \cardcontent{Morning of Holy Tuesday; a short rest.}{\scores{0}{0}{10m}{2}{0}{5}{0}{0}}
+        \cardprice{}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/Horningsea.jpg}
+        \cardtypeCambridgeshire
+        \cardtitle{Horningsea}
+        \cardcontent{Morning of Holy Tuesday; a cake stop.}{\scores{2}{4}{30m}{3}{82}{5}{2}{3}}
+        \cardprice{}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/lode.jpg}
+        \cardtypeCambridgeshire
+        \cardtitle{Lode}
+        \cardcontent{Holy Tuesday; a station stop.}{\scores{0}{0}{15m}{9}{0}{10}{2}{2}}
+        \cardprice{1}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/swaffhamprior.jpg}
+        \cardtypeCambridgeshire
+        \cardtitle{Swaffham Prior}
+        \cardcontent{Holy Tuesday; lunch stop.}{\scores{0}{0}{55m}{0}{40}{5}{1}{0}}
+        \cardprice{}
+        \cardborder
+    \end{tikzpicture}
+
+    \vspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/Burwell.jpg}
+        \cardtypeCambridgeshire
+        \cardtitle{Burwell}
+        \cardcontent{Afternoon of Holy Tuesday; a cake stop.}{\scores{3}{4}{50m}{10}{91}{7}{3}{8}}
+        \cardprice{}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/Fordham1.jpg}
+        \cardtypeCambridgeshire
+        \cardtitle{Fordham}
+        \cardcontent{Evening of Holy Tuesday; Compline in church and sleep in village hall.}{\scores{0}{0}{12h}{7}{65}{6}{4}{10}}
+        \cardprice{}
         \cardborder
     \end{tikzpicture}
     \hspace{5mm}
@@ -167,8 +233,178 @@ Cake (volume):&#1\\Cake (taste):&#2\\Rest time:&#3\\Originality:&#4\\Hospitality
         \cardbackground{img/isleham.jpg}
         \cardtypeCambridgeshire
         \cardtitle{Isleham}
-        \cardcontent{\contentA}{\contentB}
-        \cardprice{$\infty$}
+        \cardcontent{Morning of Spy Wednesday; a short rest.}{\scores{0}{0}{15h}{0}{70}{1}{0}{2}}
+        \cardprice{1}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/BeckRow.jpg}
+        \cardtypeSuffolk
+        \cardtitle{Beck Row}
+        \cardcontent{Spy Wednesday; lunch stop.}{\scores{0}{0}{45m}{2}{72}{5}{4}{0}}
+        \cardprice{}
+        \cardborder
+    \end{tikzpicture}
+
+\newpage % PAGE 4
+
+    \begin{tikzpicture}
+        \cardbackground{img/Lakenheath.jpg}
+        \cardtypeSuffolk
+        \cardtitle{Lakenheath}
+        \cardcontent{Afternoon of Spy Wednesday; a drink stop.}{\scores{0}{0}{25m}{3}{20}{4}{0}{0}}
+        \cardprice{2}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/HockwoldcumWilton.jpg}
+        \cardtypeNorfolk
+        \cardtitle{Hockwald cum Wilton}
+        \cardcontent{Afternoon of Spy Wednesday; a cake stop at a house.}{\scores{1}{3}{30m}{8}{95}{10}{5}{0}}
+        \cardprice{}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/Quarry.jpg}	
+        \cardtypeNorfolk
+        \cardtitle{Quarry}
+        \cardcontent{Afternoon of Spy Wednesday; a station stop.}{\scores{0}{0}{15m}{0}{0}{1}{0}{3}}
+        \cardprice{2}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/Methwold.jpg}
+        \cardtypeNorfolk
+        \cardtitle{Methwold}
+        \cardcontent{Evening of Spy Wednesday; eat at the vicar's and sleep in village hall.}{\scores{0}{0}{12h}{7}{92}{10}{4}{10}}
+        \cardprice{2}
+        \cardborder
+    \end{tikzpicture}
+
+    \vspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/Northwold2.jpg}
+        \cardtypeNorfolk
+        \cardtitle{Northwold}
+        \cardcontent{Morning of Maundy Thursday; cheese stop.}{\scores{0}{0}{25m}{10}{60}{5}{3}{0}}
+        \cardprice{}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/Foulden1.jpg}
+        \cardtypeNorfolk
+        \cardtitle{Foulden}
+        \cardcontent{Morning of Maundy Thursday; a cake stop.}{\scores{4}{4}{30m}{6}{70}{1}{2}{0}}
+        \cardprice{}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/CockleyCley.jpg}
+        \cardtypeNorfolk
+        \cardtitle{Cockley Cley}
+        \cardcontent{Maundy Thursday; lunch stop.}{\scores{0}{0}{40m}{4}{50}{2}{0}{0}}
+        \cardprice{2}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/Swaffham1.jpg}
+        \cardtypeNorfolk
+        \cardtitle{Swaffham}
+        \cardcontent{Maundy Thursday; the Great Cake Stop.}{\scores{10}{5}{45m}{8}{70}{2}{4}{2}}
+        \cardprice{1}
+        \cardborder
+    \end{tikzpicture}
+
+\newpage % PAGE 5
+
+    \begin{tikzpicture}
+        \cardbackground{img/RoundCovert2.jpg}
+        \cardtypeNorfolk
+        \cardtitle{Round Covert}
+        \cardcontent{Afternoon of Maundy Thursday; a station stop.}{\scores{0}{0}{10m}{0}{0}{2}{0}{7}}
+        \cardprice{}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/castleacre2.jpg}
+        \cardtypeNorfolk
+        \cardtitle{Castle Acre}
+        \cardcontent{Evening of Maundy Thursday; Maundy service and sleep in hall.}{\scores{0}{0}{12h}{7}{50}{8}{0}{9}}
+        \cardprice{1}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/Rougham2.jpg}	
+        \cardtypeNorfolk
+        \cardtitle{Rougham}
+        \cardcontent{Morning of Good Friday; fruit stop.}{\scores{0}{0}{10m}{10}{87}{6}{3}{0}}
+        \cardprice{1}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/WeasenhamAllSaints.jpg}
+        \cardtypeNorfolk
+        \cardtitle{Weasenham All Saints}
+        \cardcontent{Morning of Good Friday; a brief stop at a house.}{\scores{1}{1}{30m}{8}{75}{7}{3}{0}}
+        \cardprice{}
+        \cardborder
+    \end{tikzpicture}
+
+    \vspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/Helhoughton.jpg}
+        \cardtypeNorfolk
+        \cardtitle{Helhoughton}
+        \cardcontent{Good Friday; lunch stop.}{\scores{0}{0}{50m}{0}{20}{7}{1}{7}}
+        \cardprice{}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/SculthorpeMill.jpg}
+        \cardtypeNorfolk
+        \cardtitle{Sculthorpe}
+        \cardcontent{Afternoon of Good Friday; a drink stop.}{\scores{0}{0}{30m}{9}{0}{8}{5}{0}}
+        \cardprice{}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/gospel.jpg}
+        \cardtypeNorfolk
+        \cardtitle{Gospel}
+        \cardcontent{3pm on Good Friday; we hear the Holy Gospel of the Passion.}{\scores{0}{0}{3m}{5}{0}{10}{0}{10}}
+        \cardprice{}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/olw.jpg}
+        \cardtypeNorfolk
+        \cardtitle{Slipper Chapel}
+        \cardcontent{Afternoon of Good Friday; we arrive at the Slipper Chapel!}{\scores{1}{1}{1h30m}{5}{90}{10}{0}{9}}
+        \cardprice{}
+        \cardborder
+    \end{tikzpicture}
+    
+\newpage % PAGE 6
+
+    \begin{tikzpicture}
+        \cardbackground{img/holy-house.jpg}
+        \cardtypeNorfolk
+        \cardtitle{Walsingham}
+        \cardcontent{Good Friday, Holy Saturday, Easter Sunday.}{\scores{0}{0}{48h}{10}{20}{10}{3}{10}}
+        \cardprice{}
         \cardborder
     \end{tikzpicture}
 

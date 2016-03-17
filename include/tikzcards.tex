@@ -94,8 +94,9 @@
 \newcommand{\cardtypeTest}{\cardtype{testbg}{Testkarte}{\hspace{-1.4mm}\huge\ding{78}}}
 \newcommand{\cardtypeNorfolk}{\cardtype{norfolkbg}{Norfolk}{\hspace{-1mm}\Large\floweroneright}}
 \newcommand{\cardtypeHertfordshire}{\cardtype{hertfordshirebg}{Hertfordshire}{\hspace{-1.4mm}\huge\ding{78}}}
-\newcommand{\cardtypeCambridgeshire}{\cardtype{cambridgeshirebg}{Cambridgeshire}{\hspace{-1mm}\LARGE\lefthand}}
-\newcommand{\cardtypeEssex}{\cardtype{essexbg}{Essex}{\hspace{-1mm}\LARGE\bomb}}
+\newcommand{\cardtypeCambridgeshire}{\cardtype{cambridgeshirebg}{Cambridgeshire}{\hspace{-1mm}\LARGE\ding{45}}}
+\newcommand{\cardtypeEssex}{\cardtype{essexbg}{Essex}{\hspace{-1mm}\LARGE\lefthand}}
+\newcommand{\cardtypeSuffolk}{\cardtype{suffolkbg}{Suffolk}{\hspace{-1mm}\LARGE\ding{48}}}
 
 
 %   Titel der Karte
@@ -116,7 +117,7 @@
         \fill[elementcorners,contentbg] \shapeContentArea;
     \end{scope}
     \node[below right, text width=(\cardwidth-2*\strippadding-\stripwidth-2*\textpadding-0.3)*1cm] at (2*\strippadding+\stripwidth+\textpadding,0.5*\cardheight-\textpadding) {
-        \textit{``\normalsize #1''}
+        \textit{\normalsize #1}
     };
     \node[below right, text width=(\cardwidth-2*\strippadding-\stripwidth-2*\textpadding-0.3)*1cm] at (2*\strippadding+\stripwidth+\textpadding,3) {
         \vrule width \textwidth height 2pt \\[-2pt]
